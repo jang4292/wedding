@@ -1,0 +1,281 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    color: #e0e0e0;
+    line-height: 1.6;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 30px 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 10px;
+}
+
+/* Main Content */
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Card Styles */
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 0;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Details and Summary */
+details {
+    cursor: pointer;
+}
+
+summary {
+    padding: 20px 25px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #ffffff;
+    list-style: none;
+    user-select: none;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+summary:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+}
+
+summary::before {
+    content: '▶';
+    position: absolute;
+    left: 25px;
+    transition: transform 0.3s ease;
+    color: #64b5f6;
+}
+
+details[open] summary::before {
+    transform: rotate(90deg);
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary {
+    padding-left: 50px;
+}
+
+/* Checklist Styles */
+.checklist {
+    padding: 20px 25px 25px 60px;
+    list-style-position: outside;
+}
+
+.checklist li {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    color: #b0b0b0;
+    transition: color 0.2s ease;
+}
+
+.checklist li:last-child {
+    border-bottom: none;
+}
+
+.checklist li:hover {
+    color: #ffffff;
+}
+
+ol.checklist {
+    list-style-type: decimal;
+}
+
+ul.checklist {
+    list-style-type: disc;
+}
+
+/* Audio Section */
+.audio-list {
+    padding: 20px 25px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.audio-item {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    padding: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.audio-item:hover {
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.audio-info {
+    margin-bottom: 15px;
+}
+
+.audio-info h3 {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.audio-info p {
+    font-size: 0.9rem;
+    color: #888;
+    font-style: italic;
+}
+
+audio {
+    width: 100%;
+    margin-bottom: 12px;
+    border-radius: 4px;
+    outline: none;
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Download Button */
+.download-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.download-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.download-btn:active {
+    transform: translateY(0);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 40px 20px 20px;
+    margin-top: 40px;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    summary {
+        font-size: 1.1rem;
+        padding: 15px 20px;
+        padding-left: 45px;
+    }
+
+    summary::before {
+        left: 20px;
+    }
+
+    .checklist {
+        padding: 15px 20px 20px 50px;
+    }
+
+    .audio-list {
+        padding: 15px 20px 20px;
+    }
+
+    .audio-item {
+        padding: 15px;
+    }
+
+    .audio-info h3 {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    summary {
+        font-size: 1rem;
+        padding: 12px 15px;
+        padding-left: 40px;
+    }
+
+    summary::before {
+        left: 15px;
+    }
+
+    .checklist {
+        padding: 12px 15px 15px 45px;
+        font-size: 0.95rem;
+    }
+
+    .audio-list {
+        padding: 12px 15px 15px;
+    }
+
+    .audio-item {
+        padding: 12px;
+    }
+
+    .audio-info h3 {
+        font-size: 1rem;
+    }
+
+    .audio-info p {
+        font-size: 0.85rem;
+    }
+}
