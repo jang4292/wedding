@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>축공팀 페이지</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar__inner">
+      <h1>축공팀 페이지</h1>
+      <p class="muted">구성/동선/장비/도착시간 정리용 (뎁스 확장)</p>
+      <nav class="nav">
+        <a href="./mc.html">사회자</a>
+        <a href="./mc_temp.html">사회자_임시</a>
+        <a class="active" href="./performance.html">축공팀</a>
+        <a href="./checklist.html">기타 체크</a>
+        <a href="./temp_index.html">임시 체크</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>축공 체크 리스트</h2>
+
+      <ul class="tree">
+        <li class="node">
+          <details>
+            <summary>
+              <span class="title">도착 시간 / 대기 장소</span>
+              <span class="tag">P1</span>
+            </summary>
+            <div class="detail">
+              <ul class="tree child">
+                <li class="node">
+                  <details>
+                    <summary>
+                      <span class="title">도착 기준</span>
+                      <span class="tag">TIME</span>
+                    </summary>
+                    <div class="detail">
+                      <p>권장: 예식 시작 60~90분 전. 리허설 가능 시간 포함.</p>
+                    </div>
+                  </details>
+                </li>
+                <li class="node">
+                  <details>
+                    <summary>
+                      <span class="title">대기 동선</span>
+                      <span class="tag">MAP</span>
+                    </summary>
+                    <div class="detail">
+                      <p>대기실/무대 진입 경로, 이동 중 충돌 포인트 메모.</p>
+                    </div>
+                  </details>
+                </li>
+              </ul>
+            </div>
+          </details>
+        </li>
+
+        <li class="node">
+          <details>
+            <summary>
+              <span class="title">무대/바닥/공간 제약</span>
+              <span class="tag">P1</span>
+            </summary>
+            <div class="detail">
+              <ul>
+                <li>바닥 미끄럼/구두/회전 동작 위험</li>
+                <li>무대 크기, 기둥/장식물 간섭</li>
+                <li>객석과의 거리(동선 안전)</li>
+              </ul>
+            </div>
+          </details>
+        </li>
+
+        <li class="node">
+          <details>
+            <summary>
+              <span class="title">음원/MR 전달</span>
+              <span class="tag">P1</span>
+            </summary>
+            <div class="detail">
+              <ul class="tree child">
+                <li class="node">
+                  <details>
+                    <summary>
+                      <span class="title">파일 규격</span>
+                      <span class="tag">AUDIO</span>
+                    </summary>
+                    <div class="detail">
+                      <p>mp3 320kbps 등으로 통일 + USB/클라우드 백업.</p>
+                    </div>
+                  </details>
+                </li>
+                <li class="node">
+                  <details>
+                    <summary>
+                      <span class="title">시작 타이밍</span>
+                      <span class="tag">CUE</span>
+                    </summary>
+                    <div class="detail">
+                      <p>사회자 멘트 종료 후 즉시 / 3초 후 등 정확히 명시.</p>
+                    </div>
+                  </details>
+                </li>
+              </ul>
+            </div>
+          </details>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small class="muted">축공팀 페이지는 “현장 실행 정보”만 남기는 게 효율적입니다.</small>
+  </footer>
+</body>
+</html>

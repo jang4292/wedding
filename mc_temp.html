@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="ko">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>사회자 페이지</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <header class="topbar">
+      <div class="topbar__inner">
+        <h1>사회자 페이지</h1>
+        <p class="muted">식순/멘트/큐시트 확인용 (뎁스 확장 리스트)</p>
+        <nav class="nav">
+          <a href="./mc.html">사회자</a>
+          <a class="active" href="./mc_temp.html">사회자_임시</a>
+          <a href="./performance.html">축공팀</a>
+          <a href="./checklist.html">기타 체크</a>
+          <a href="./temp_index.html">임시 체크</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="card">
+        <h2>식순 리스트</h2>
+        <ul class="tree">
+          <!-- 뎁스 예시 -->
+
+          <li class="node">
+            <details>
+              <summary>
+                <span class="title">개식사</span>
+              </summary>
+            </details>
+
+            <div class="detail">
+              <p>개식 선언 멘트/주의사항/다음 큐를 정리합니다.</p>
+
+              <ul>
+                <li>특이사항</li>
+                <li>주례 없는 예식</li>
+              </ul>
+            </div>
+
+          </li>
+
+          <li class="node">
+            <details>
+              <summary>
+                <span class="title">축사</span>
+              </summary>
+            </details>
+
+            <div class="detail">
+              <p>축사 멘트/특이사항/다음 큐를 정리합니다.</p>
+              <ul>
+                <li> 축사자 : 미정 </li>
+                <li> 축사 순서 : 미정 </li>
+                <li> 특이 사항 </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="node">
+            <details>
+              <summary>
+                <span class="title">반지 교환</span>
+              </summary>
+            </details>
+
+            <div class="detail">
+              <p>교환 멘트/특이사항/다음 큐를 정리합니다.</p>
+              <ul>
+                <li> 반지 보관 위치 </li>
+                <li> 반지 전달자 : 미정 </li>
+                <li> 특이 사항 </li>
+              </ul>
+            </div>
+          </li>
+          <li class="node">
+            <details>
+              <summary>
+                <span class="title">화촉 점화</span>
+              </summary>
+            </details>
+
+            <div class="detail">
+              <p>점화자/순서/주의사항 등을 메모합니다.</p>
+              <ul>
+
+                <li>양가 부모님 모두 참석 가능 여부</li>
+                <li>모두 참석 예정</li>
+              </ul>
+
+              <!-- <ul>
+                <li>점화자 대기 위치</li>
+                <li>점화 시 안전 주의</li>
+                <li>점화자: 신랑 어머니 → 신부 어머니</li>
+                <li>주의사항: 촛불 다 꺼졌는지 확인</li>
+              </ul> -->
+
+            </div>
+        </ul>
+
+        <ul class="tree">
+          <!-- 1뎁스 -->
+          <li class="node">
+            <details>
+              <summary>
+                <span class="title">개식사</span>
+                <span class="tag">P1</span>
+              </summary>
+
+              <div class="detail">
+                <p>개식 선언 멘트/주의사항/다음 큐를 정리합니다.</p>
+
+                <!-- 2뎁스 -->
+                <ul class="tree child">
+                  <li class="node">
+                    <details>
+                      <summary>
+                        <span class="title">멘트(기본)</span>
+                        <span class="tag">SCRIPT</span>
+                      </summary>
+                      <div class="detail">
+                        <p>예시(수정해서 사용): “지금부터 신랑 ○○, 신부 ○○의 결혼식을 시작하겠습니다.”</p>
+
+                        <!-- 3뎁스 -->
+                        <ul class="tree child">
+                          <li class="node">
+                            <details>
+                              <summary>
+                                <span class="title">주의사항(발음/호칭)</span>
+                                <span class="tag">CHECK</span>
+                              </summary>
+                              <div class="detail">
+                                <ul>
+                                  <li>부모님 호칭/성함 발음 재확인</li>
+                                  <li>소개할 주요 인물 이름 표기</li>
+                                  <li>멘트 길이(지연 시 축약 버전 준비)</li>
+                                </ul>
+                              </div>
+                            </details>
+                          </li>
+                        </ul>
+                      </div>
+                    </details>
+                  </li>
+
+                  <li class="node">
+                    <details>
+                      <summary>
+                        <span class="title">다음 큐(입장 연결)</span>
+                        <span class="tag">CUE</span>
+                      </summary>
+                      <div class="detail">
+                        <ul>
+                          <li>신랑 입장 타이밍</li>
+                          <li>BGM 시작 시점</li>
+                          <li>사진/영상 촬영 신호(필요 시)</li>
+                        </ul>
+                      </div>
+                    </details>
+                  </li>
+                </ul>
+              </div>
+            </details>
+          </li>
+
+          <li class="node">
+            <details>
+              <summary>
+                <span class="title">신랑 입장</span>
+                <span class="tag">P1</span>
+              </summary>
+              <div class="detail">
+                <ul class="tree child">
+                  <li class="node">
+                    <details>
+                      <summary>
+                        <span class="title">BGM 큐</span>
+                        <span class="tag">AUDIO</span>
+                      </summary>
+                      <div class="detail">
+                        <p>파일명/볼륨/페이드 정책을 적어두세요.</p>
+                      </div>
+                    </details>
+                  </li>
+                  <li class="node">
+                    <details>
+                      <summary>
+                        <span class="title">동선 안내</span>
+                        <span class="tag">MAP</span>
+                      </summary>
+                      <div class="detail">
+                        <p>입장 위치/정지 지점/퇴장 위치 등.</p>
+                      </div>
+                    </details>
+                  </li>
+                </ul>
+              </div>
+            </details>
+          </li>
+
+          <li class="node">
+            <details>
+              <summary>
+                <span class="title">축가/축공 소개 멘트</span>
+                <span class="tag">P2</span>
+              </summary>
+              <div class="detail">
+                <p>축가자/축공팀 소개 문장 + 마이크/무대 안내 포함.</p>
+              </div>
+            </details>
+          </li>
+
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <small class="muted">팁: 뎁스는 details를 계속 중첩하면 무한 확장 가능합니다.</small>
+    </footer>
+  </body>
+
+</html>
