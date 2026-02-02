@@ -37,19 +37,36 @@ h2{ margin:0 0 10px 0; font-size: 16px; }
 .nav{
   display:flex;
   gap:10px;
-  flex-wrap:wrap;
+  /* flex-wrap:wrap; */
   margin-top:10px;
 }
+
+.nav--scroll{
+  overflow-x:auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
+}
+.nav--scroll::-webkit-scrollbar{ display:none; } /* Chrome */
+
 .nav a{
-  text-decoration:none;
+  /* text-decoration:none;
   color: var(--text);
   border:1px solid var(--line);
   background: rgba(0,0,0,0.15);
   padding: 8px 10px;
-  border-radius: 10px;
+  border-radius: 10px; */
+    flex: 0 0 auto;
+  white-space: nowrap;
+  text-decoration:none;
+  color: var(--text);
+  border:1px solid var(--line);
+  background: rgba(0,0,0,0.15);
+  padding: 6px 10px;   /* 높이 최소화 */
+  border-radius: 999px; /* pills */
+  font-size: 13px;
 }
 .nav a.active{
-  outline: 1px solid rgba(157,176,198,0.35);
+  outline: 5px solid rgba(157,176,198,0.35);
 }
 
 .container{
